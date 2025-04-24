@@ -1,0 +1,26 @@
+# Cache / virtualenv / compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.streamlit/*
+!.streamlit/config.toml
+!.streamlit/secrets.toml
+
+# Diretórios de IDE/editor
+.vscode/
+.idea/
+.DS_Store
+
+# Virtualenv local
+venv/
+.env
+
+# Node (se por acaso usar algum frontend JS na mesma pasta)
+node_modules/
+
+# Arquivos ocultos e sensíveis
+.env.*
+secrets.*
