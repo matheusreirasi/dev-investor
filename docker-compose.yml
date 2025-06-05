@@ -1,4 +1,4 @@
-
+version: "3.8"
 
 services:
   backend:
@@ -7,6 +7,11 @@ services:
     ports:
       - "8000:8000"
     restart: always
+    volumes: 
+      - ./backend:/app
+    networks:
+      - devinvestor
+
   frontend:
     build: ./frontend
     container_name: devinvestor_frontend
@@ -17,3 +22,8 @@ services:
       - backend
     volumes:
       - ./frontend:/app
+    networks:
+      - devinvestor
+
+networks:
+  devinvestor:
