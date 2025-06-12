@@ -11,7 +11,9 @@ services:
       - devinvestor
 
   frontend:
-    build: ./frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: devinvestor_frontend
     ports:
       - "80:8501"

@@ -20,6 +20,7 @@ build/
 *.log
 *.pid
 *.sock
+*.override.yaml
 
 # Vite
 .vite/
