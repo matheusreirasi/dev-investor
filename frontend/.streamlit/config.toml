@@ -2,3 +2,6 @@
 headless = true
 runOnSave = true
 fileWatcherType = "poll"
+enableCORS = false
+port = 8501
+address = "0.0.0.0"
