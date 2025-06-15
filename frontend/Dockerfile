@@ -7,11 +7,11 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 
-COPY frontend/requirements.txt ./
+COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY frontend/ ./
+COPY . ./
 
 # Cria config do Streamlit
 # RUN mkdir -p ~/.streamlit && echo "\
